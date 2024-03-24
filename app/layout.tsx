@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,7 +29,7 @@ export default function RootLayout({
         {/* <canvas id="GameCanvas" tabIndex={99}></canvas> */}
         {/* </div>
         </div> */}
-        <script src="src/system.bundle.js" charSet="utf-8"></script>
+        {/* <script src="src/system.bundle.js" charSet="utf-8"></script>
 
         <script
           src="src/import-map.json"
@@ -38,7 +37,7 @@ export default function RootLayout({
           charSet="utf-8"
         ></script>
 
-        <script src="./index.js"></script>
+        <script src="./index.js"></script> */}
       </body>
     </html>
   );
