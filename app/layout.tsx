@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import styles from "./layout.module.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,29 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-        {/* <div style={{ width: "100vw", height: "100vh" }}>
-          <div
-            style={{
-              height: "calc(100vw / 2 )",
-              width: "100vw",
-              position: "relative",
-            }}
-          > */}
-        {/* <canvas id="GameCanvas" tabIndex={99}></canvas> */}
-        {/* </div>
-        </div> */}
-        {/* <script src="src/system.bundle.js" charSet="utf-8"></script>
-
-        <script
-          src="src/import-map.json"
-          type="systemjs-importmap"
-          charSet="utf-8"
-        ></script>
-
-        <script src="./index.js"></script> */}
-      </body>
+      <body className={inter.className}>{children}</body>
     </html>
   );
 }
