@@ -15,14 +15,14 @@ export default function Cocos(props: CocosProps) {
   return (
     <div id="nthiendev" className={CanVasStyles}>
       {/* <canvas id="GameCanvas" className={styles.game_canvas}></canvas> */}
-      <Script id="cocos-nthiendev" src="./src/system.bundle.js"></Script>
+      {/* <Script id="cocos-nthiendev" src="./src/system.bundle.js"></Script>
 
       <Script
         id="cocos-nthiendev"
         src="./src/import-map.json"
         type="systemjs-importmap"
       ></Script>
-      <Script id="cocos-nthiendev" src="cocos_loader.js"></Script>
+      <Script id="cocos-nthiendev" src="cocos_loader.js"></Script> */}
     </div>
   );
 }
