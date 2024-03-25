@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import Script from "next/script";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-around p-24">
@@ -44,3 +46,17 @@ export default function Home() {
     </main>
   );
 }
+
+// export default function Home() {
+//   const hadnle = () => {};
+//   return (
+//     <div>
+//       <Script
+//         id="cocos-nthiendev"
+//         src="./src/import-map.json"
+//         type="systemjs-importmap"
+//       ></Script>
+//       <Script id="cocos-nthiendev" src="cocos_loader.js"></Script>
+//     </div>
+//   );
+// }
